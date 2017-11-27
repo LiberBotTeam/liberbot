@@ -41,7 +41,7 @@ sudo apt-get install lua-lgi -y
 sudo apt-get install libnotify-dev -y
 chmod +x bot
 chmod +x tg
-chmod +x autoenergy
+chmod +x autoliberbot
 }
 get_sub() {
 local flag=false c count cr=$'\r' nl=$'\n'
@@ -105,7 +105,7 @@ cat << EOF
  
 EOF
 echo  "                          cerner persian launcher         "
-echo "                            edited by MY_NAME_IS_EHSAN           "
+echo "                            edited by masoud_shar         "
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
@@ -139,7 +139,7 @@ done
 mkdir $HOME/.telegram-bot; cat <<EOF > $HOME/.telegram-bot/config
 default_profile = "main";
 main = {
-lua_script = "$HOME/energy_plus/bot/bot.lua";
+lua_script = "$HOME/liberbot/bot/bot.lua";
 };
 EOF
 printf "\nDone\n"
@@ -154,7 +154,7 @@ CerNer(){
 mkdir $HOME/.telegram-bot; cat <<EOF > $HOME/.telegram-bot/config
 default_profile = "main";
 main = {
-lua_script = "$HOME/energy_plus/bot/bot.lua";
+lua_script = "$HOME/liberbot/bot/bot.lua";
 };
 EOF
 printf "\nDone\n"
@@ -166,10 +166,10 @@ loginApi() {
 ./tg -p main --login --bot=${1}
 }
 function gitpull() {
-git checkout energy  bot/ libs/
+git checkout liberbot  bot/ libs/
 git pull
-echo chmod +x energy | /bin/bash
-version=$(echo "./energy tgcli_version" | /bin/bash)
+echo chmod +x liberbot | /bin/bash
+version=$(echo "./liberbot tgcli_version" | /bin/bash)
 updateTD $version
 }
 updateTD() {
@@ -185,7 +185,7 @@ printf "\n"
 }
 warning() {
 TXT=(
-"دستور وارد شده صحیح نیست !  لطفا از \n./energy help استفاده کنید!"
+"دستور وارد شده صحیح نیست !  لطفا از \n./liberbot help استفاده کنید!"
 )
 printf "${TXT}"
 printf "\n"
