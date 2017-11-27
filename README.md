@@ -1,38 +1,38 @@
-# **CerNer_persian** #
+# **کرنر دو زبانه** #
 # **ستاره یادت نره حمایت کن** #
 
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test && sudo apt-get update && apt-get upgrade && sudo apt-get install libconfig++9v5 libstdc++6 && sudo apt autoremove
 *******************************************************************
-git clone https://github.com/telebombang2018/energy_plus
+git clone https://github.com/LiberBotTeam/liberbot
 *****************************************************************
-cd energy_plus
+cd liberbot
 **********************************************************************
-chmod +x energy
+chmod +x liberbot
 **********************************************************************
-./energy install
+./liberbot install
 **********************************************************************
-./energy config  
+./liberbot config  
 **********************************************************************
-./energy login-Cli  
+./liberbot login-Cli  
  
 جهت فعال کردن در اکانت 
 دوستان اگه شماره رباتتون روسیه باشه تو همه گروها با سرعت بالا جواب میده
 اگه شماره های یگه باشه دیر جواب میده
 **********************************************************************
-./energy login-Api  
+./liberbot login-Api  
 
 جهت فعال کردن در بات 
 **********************************************************************
 1-شناسه سودو را در مسیر زیر قرار دهید:
 2-سپس یه چنل ساخته بات را در ان ادمین کرده و ایدی چنل را در مسیر زیر قرار دهید
 
-energy_cer > bot > bot.lua 
+liberbot_cer > bot > bot.lua 
 
 SUDO_ID = {323046540,ایدی خودتون }
 Full_Sudo = {323046540,ایدی خودتون}
 ChannelLogs= -1001234567890
 **********************************************************************
-./energy start  
+./liberbot start  
  فعال سازی
 **********************************************************************
 اتولانچ :  
@@ -41,13 +41,13 @@ killall -9 bash
 **********************************************************************
 ترمینال جدید باز کنید 
 
-cd energy_plus
+cd liberbot
 
-chmod +x ./energy
+chmod +x ./liberbot
 
-chmod +x ./autoenergy 
+chmod +x ./autoliberbot
 
-screen ./autoenergy
+screen ./autoliberbot
 --------------------------------------------------
 توجه کنید ربات بدون هلپر میباشد 
 سوال نپرسید 
